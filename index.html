@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VYRE · Emberline</title>
+<meta name="description" content="VYRE es un estudio independiente de juegos de Costa Rica. Nuestro primer juego: Emberline, un endless runner de fantasía para Android.">
+<link rel="icon" href="emberline-icon.png">
+<style>
+:root{--bg:#070707;--ink:#f4efe8;--muted:#9a948c;--ember:#ff8a3d;--ember2:#ffd36e;--card:#141210;--line:#2a2522}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+a{color:var(--ember2)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:56px 0 36px;text-align:center}
+.mark{width:120px;height:auto;filter:drop-shadow(0 0 14px rgba(255,165,58,.35))}
+.mark polygon{fill:#fff}
+.word{display:block;width:180px;margin:18px auto 6px}
+.tag{color:var(--muted);letter-spacing:.32em;text-transform:uppercase;font-size:12px}
+.game{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin:8px 0 28px}
+.game img.banner{display:block;width:100%;height:auto}
+.gbody{display:flex;gap:18px;padding:22px;align-items:flex-start}
+.gbody img{width:84px;height:84px;border-radius:20px;flex:none}
+h1{margin:0 0 4px;font-size:26px;letter-spacing:.02em}
+h2{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:34px 0 10px}
+.gbody p{margin:6px 0;color:#d9d2c8}
+.badge{display:inline-block;margin-top:10px;padding:8px 14px;border-radius:999px;border:1px solid var(--ember);color:var(--ember2);font-weight:700;font-size:14px}
+.links{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.links a{display:block;padding:14px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600}
+.links a small{display:block;color:var(--muted);font-weight:400;font-size:12.5px}
+.links a:hover{border-color:var(--ember)}
+footer{color:var(--muted);font-size:13px;text-align:center;padding:40px 0 48px}
+@media (max-width:520px){.gbody{flex-direction:column} h1{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <svg class="mark" viewBox="0 0 367 223" aria-hidden="true"><polygon points="0,0 103,0 170.7,112 120.1,198.8"/><polygon points="264,0 367,0 236,223 133,223"/></svg>
+    <img class="word" src="data:image/png;base64,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" alt="VYRE">
+    <div class="tag">Estudio independiente · Costa Rica</div>
+  </header>
+
+  <section class="game">
+    <img class="banner" src="emberline-banner.jpg" alt="Emberline: corre, esquiva, roba la brasa">
+    <div class="gbody">
+      <img src="emberline-icon.png" alt="Ícono de Emberline">
+      <div>
+        <h1>Emberline</h1>
+        <p>Roba el Corazón de Brasa, salta entre trenes y escapa del Custodio. Un endless runner de fantasía con tres mundos, tres jefes y cinco corredores, cada uno con su propia Llamarada.</p>
+        <p style="color:var(--muted);font-size:14px">Steal the Ember Heart, leap between trains and escape the Warden. A fantasy endless runner for Android.</p>
+        <span class="badge">Próximamente en Google Play</span>
+      </div>
+    </div>
+  </section>
+
+  <h2>Contacto y comunidad</h2>
+  <div class="links">
+    <a href="mailto:vyregames@gmail.com">Correo<small>vyregames@gmail.com</small></a>
+    <a href="https://discord.gg/zkAv7vRSnQ" rel="noopener">Discord<small>Únete a la comunidad</small></a>
+    <a href="https://ko-fi.com/vyregames" rel="noopener">Ko-fi<small>Apoya el desarrollo</small></a>
+    <a href="privacy.html">Política de privacidad<small>Privacy policy</small></a>
+  </div>
+
+  <footer>© 2026 VYRE · Hecho por Dario Chinchilla</footer>
+</div>
+</body>
+</html>
